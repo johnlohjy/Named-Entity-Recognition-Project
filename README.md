@@ -23,7 +23,8 @@ This project uses a neural network model architecture using Bi-Directional LSTMs
 1. Create a conda environment with python version 3.7.5. Example: <br> `conda create -n myenv python=3.7.5`
 2. Download visual c++ build tools from https://visualstudio.microsoft.com/visual-cpp-build-tools/. The installation may take a while.
 3. Install pandas using `conda install -c anaconda pandas=0.24.2`
-4. Run the `setup.py` file in the `fastText-master` folder <br> using `python setup.py install`
+4. Download the fasttext master folder from https://github.com/facebookresearch/fastText
+and add it inside the project folder. Run the `setup.py` file in the `fastText-master` folder <br> using `python setup.py install`
 5. Install the packages below
 
 Package | Command
@@ -35,8 +36,7 @@ nltk 3.4.4| `conda install -c anaconda nltk=3.4.4`
 requests 2.22.0| `conda install -c anaconda requests=2.22.0`
 flask 1.1.1| `conda install -c anaconda flask=1.1.1`
 
-
-6. Run the `setup.py` file in the `keras-contrib-master` folder using<br>  `python setup.py install`
+6. Download the keras-contrib master folder from https://github.com/keras-team/keras-contrib and add it inside the project folder. Run the `setup.py` file in the `keras-contrib-master` folder using<br>  `python setup.py install`
 
 7. Download the `English bin+text` from https://fasttext.cc/docs/en/pretrained-vectors.html and add the downloaded `wiki.en.bin` file to the project folder: `ner_backend`
 
