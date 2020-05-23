@@ -1,6 +1,7 @@
 # NAMED ENTITY RECOGNITION ON MIT MOVIE QUERIES
 
-This project uses a neural network model architecture using Bi-Directional LSTMs with a CRF Layer to perform named entity recognition.
+This project uses a Bi-Directional LSTMs with a CRF Layer neural network model architecture to perform named entity recognition. The use case here is on MIT movie queries where entities such as the actor and genre of the movie can be extracted from the query. 
+For instance the movie query 
 
 ## Dependencies
 * miniconda3 windows 64-bit environment
