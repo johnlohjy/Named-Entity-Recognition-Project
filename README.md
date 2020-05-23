@@ -115,7 +115,7 @@ The output from this file includes the following:
 
 #### `app_word_vector.py`
 This file/API is used to convert the tokenized text into vectors. This is needed because neural network mdoels cannot read raw text and need vector inputs. To run the API:
-1. Change directory to the project folder
+1. Change directory to the project folder in your conda environment
 2. Type `SET FLASK_APP=app_word_vector.py` and hit enter
 3. Type `FLASK RUN` and hit enter
 4. Wait for the API to run before running notebooks labelled from B to E
