@@ -39,6 +39,26 @@ flask 1.1.1| `conda install -c anaconda flask=1.1.1`
 
 7. Download the `English bin+text` from https://fasttext.cc/docs/en/pretrained-vectors.html and add the downloaded `wiki.en.bin` file to the project folder. The installation may take a while.
 
+Your folder structure should look like this:
+
+|__fastText-master <br>
+|__index_converter <br>
+|__keras-contrib-master <br>
+|__mass_predictor_results <br>
+|__model_training_weights <br>
+|__random_search_data <br>
+|__test_set <br>
+|__training_hist <br>
+|__training_set <br>
+|__word_vector <br>
+|__A_mit_movie_queries_dataset_conversion.ipynb <br>
+|__AA_mit_movie_queries_dataset_conversion_testset.ipynb <br>
+|__app_word_vector.py <br>
+|__B_random_cv_mit_movie_query.ipynb <br>
+|__C_trainer.ipynb <br>
+|__D_predictor.ipynb <br>
+|__E_mass_predictor.ipynb <br>
+|__wiki.en.bin <br>
 <br>
 <br>
 
