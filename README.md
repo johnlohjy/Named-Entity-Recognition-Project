@@ -39,7 +39,7 @@ flask 1.1.1| `conda install -c anaconda flask=1.1.1`
 
 7. Download the `English bin+text` from https://fasttext.cc/docs/en/pretrained-vectors.html and add the downloaded `wiki.en.bin` file to the project folder. The installation may take a while.
 
-Your folder structure should look like this:
+Your project folder structure should look like this:
 
 |__fastText-master <br>
 |__index_converter <br>
@@ -127,8 +127,6 @@ In summary, the output from running this file includes the following:
 * `random_search_hist.txt` file - this pickled file contains a dictionary where each key is the index number of the combination of the hyperparameters in the random_search_hyperparams.txt list and each value is a list, containing information regarding the combination of hyperparameters tested, the mean f1 score of all the 5 folds that were tested during cross validation, as well as all the f1 scores of the 5 folds that were tested during cross validation. This is the progress of the random search cross validation you have ran.
 * `best_hyperparameter_info.txt` file - this pickled file contains a list that has the best combination of hyperparameters and its respective average f1 score attained from the random search cross validation process. This is helpful in training the model and for prediction as it provides the best combination of hyperparameters for our use case. 
 
-However, please note that these files are not provided in this repository.
-
 <br>
 
 #### `C_trainer.ipynb`
@@ -137,7 +135,7 @@ However, please note that these files are not provided in this repository.
 
 This file is used to train the neural network model. Only the best weights from training is left in the model_training_weights folder, the rest of the weights that have been saved from each epoch are deleted. The training can be done by running all cells in this notebook. 
 
-__If you wish to use your own best hyperparameters found from your own random search cross validation__, please edit the "Getting best hyperparameters of model" code block accordingly. Instructions to make this change can be found in its annotations. 
+__If you wish to use your own best hyperparameters found from your own random search cross validation__, please make sure you have ran the `B_random_cv_mit_movie_query.ipynb` notebook and have your `best_hyperparameter_info.txt` file. Otherwise, my best combination of hyperparameters found from my own random search cross validation will be used.
 
 Also, the explanation for the use of Bi-Directional LSTM neural networks with a CRF layer can be found at the bottom of the notebook.
 
@@ -152,7 +150,7 @@ This file is used to predict a single movie search query where the results can b
 
 __If you wish to predict your own movie query__, please edit the "Input text to be extracted" code block accordingly. Instructions to make this change can be found in its annotations. 
 
-__If you wish to use your own best hyperparameters found from your own random search cross validation__, please edit the "Getting best hyperparameters of model" code block accordingly. Instructions to make this change can be found in its annotations. 
+__If you wish to use your own best hyperparameters found from your own random search cross validation__, please make sure you have ran the `B_random_cv_mit_movie_query.ipynb` notebook and have your `best_hyperparameter_info.txt` file. Otherwise, my best combination of hyperparameters found from my own random search cross validation will be used.
 
 <br> 
 
@@ -161,7 +159,7 @@ This file is used to predict multiple movie search queries stored in a list, whe
 
 __If you wish to predict your own list of movie queries__, please edit the "Input text to be extracted" code block accordingly. Instructions to make this change can be found in its annotations. 
 
-__If you wish to use your own best hyperparameters found from your own random search cross validation__, please edit the "Getting best hyperparameters of model" code block accordingly. Instructions to make this change can be found in its annotations. 
+__If you wish to use your own best hyperparameters found from your own random search cross validation__, please make sure you have ran the `B_random_cv_mit_movie_query.ipynb` notebook and have your `best_hyperparameter_info.txt` file. Otherwise, my best combination of hyperparameters found from my own random search cross validation will be used.
 
 The output from this file is the csv files of the predicted results of each text which can be found in the mass_predictor_results folder.
 
@@ -199,7 +197,7 @@ This folder contanins 2 files.
  This folder will contain 3 files if you run the `B_random_cv_mit_movie_query` file. If not, it is empty. 
 1. `random_search_params.txt` - this pickled file contains the list of combination of hyperparameters that has been/is to be tested for random cross validation.
 2. `random_search_hist.txt` - this pickled file contains a dictionary where each key is the index number of the combination of the hyperparameters in the random_search_hyperparams.txt list and each value is a list, containing information regarding the combination of hyperparameters tested, the mean f1 score of all the 5 folds that were tested during cross validation, as well as all the f1 scores of the 5 folds that were tested during cross validation. This is the progress of the random search cross validation you have ran.
-3. `best_parameter_info.txt`  - this pickled file contains a list that has the best combination of hyperparameters and its respective average f1 score attained from the random search cross validation process. This is helpful in training the model and for prediction as it provides the best combination of hyperparameters for our use case.  
+3. `best_parameter_info.txt`  - this pickled file contains a list that has the best combination of hyperparameters and its respective average f1 score attained from the random search cross validation process. This is helpful in training the model and for prediction as it provides the best combination of hyperparameters for our use case for the notebooks to use.  
 
  #### test_set folder
  This folder contains 3 files. 
