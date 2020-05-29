@@ -1,7 +1,7 @@
 # NAMED ENTITY RECOGNITION ON MIT MOVIE QUERIES
-## Please note that this project has been adapted for the use-case of performing Named Entity Recognition on MIT movie queries as the data for the original use case that this project was used for, under a leading investment organisation in Singapore, is highly sensitive and cannot be publicly disclosed. Thus, the code will differ. For example, different and less features in the training set. 
+### Please note that this project has been adapted for the use-case of performing Named Entity Recognition on MIT movie queries as the data for the original use case that this project was used for, done with a leading investment organisation in Singapore, is highly sensitive and cannot be publicly disclosed. Thus, the code will differ. For example, different and less features in the training set. 
 
-## Please read this documentation to understand the project better
+## Please read this documentation to understand the project better.
 
 This project uses a Bi-Directional LSTM with CRF Layer neural network model architecture to perform named entity recognition. The use case here is on MIT movie queries where entities such as the actor and genre of the movie can be extracted from the movie query. For instance the movie query "show me 1980s action movies" will have entities such as year which would be "1980s" and genre which would be "action".
 
