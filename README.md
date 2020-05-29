@@ -1,5 +1,5 @@
 # NAMED ENTITY RECOGNITION ON MIT MOVIE QUERIES
-### Please note that this project has been adapted for the use-case of performing Named Entity Recognition on MIT movie queries as the data for the original use case that this project was used for, done with a leading investment organisation in Singapore, is highly sensitive and cannot be publicly disclosed. Thus, the code will differ. For example, different and less features in the training set. 
+### Please note that this project has been adapted for the use-case of performing Named Entity Recognition on MIT movie queries as the data for the original use case that this project was used for (done with a leading investment organisation in Singapore) is highly sensitive and cannot be publicly disclosed. Thus, the code will differ. For example, different and less features in the training set. 
 
 ## Please read this documentation to understand the project better.
 
